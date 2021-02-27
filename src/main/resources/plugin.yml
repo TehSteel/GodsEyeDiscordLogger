@@ -1,0 +1,6 @@
+name: GodsEyeDiscordLogger
+version: 1.0.0
+main: me.tehsteel.godseyediscordlogger.GodsEyeDiscordLogger
+author: TehSteel
+description: A simple discord logger for GodsEye
+depend: [ GodsEye ]
