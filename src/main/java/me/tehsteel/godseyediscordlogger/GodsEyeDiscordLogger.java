@@ -46,11 +46,11 @@ public class GodsEyeDiscordLogger extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerAlertEvent(final GodsEyeAlertEvent event) {
 		final String name = event.getPlayer().getName();
-		final DiscordWebhook webhook = new DiscordWebhook(Constants.Alert.Webhook);
+		final DiscordWebhook webhook = new DiscordWebhook(Constants.Alert.WEBHOOK);
 		webhook.addEmbed(new DiscordWebhook.EmbedObject()
-				.setTitle(Constants.Alert.Title.replace("{player}", name)
+				.setTitle(Constants.Alert.TITLE.replace("{player}", name)
 						.replace("{checktype}", event.getCheckType().getName()))
-				.setDescription(Constants.Alert.Description
+				.setDescription(Constants.Alert.DESCRIPTION
 						.replace("{player}", name)
 						.replace("{checktype}", event.getCheckType().getName())
 						.replace("{vl}", String.valueOf(event.getViolationCount())))
@@ -73,12 +73,12 @@ public class GodsEyeDiscordLogger extends JavaPlugin implements Listener {
 	public void onPlayerPunishEvent(final GodsEyePunishPlayerEvent event) {
 		final String name = event.getPlayer().getName();
 		final String checkType = event.getCheckType().getName();
-		final DiscordWebhook webhook = new DiscordWebhook(Constants.Punish.Webhook);
+		final DiscordWebhook webhook = new DiscordWebhook(Constants.Punish.WEBHOOK);
 		webhook.addEmbed(new DiscordWebhook.EmbedObject()
-				.setTitle(Constants.Punish.Title
+				.setTitle(Constants.Punish.TITLE
 						.replace("{player}", name)
 						.replace("{checktype}", checkType))
-				.setDescription(Constants.Punish.Description
+				.setDescription(Constants.Punish.DESCRIPTION
 						.replace("{player}", name)
 						.replace("{checktype}", checkType))
 		);
