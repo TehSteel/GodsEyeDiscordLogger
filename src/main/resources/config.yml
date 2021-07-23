@@ -1,15 +1,15 @@
 Punish:
-  Webhook: ""
+  WEBHOOK: ""
   # Placeholders
   # {player} = Gets the player name
   # {checktype} = Gets the check type
-  Title: "Punishment Executed"
-  Description: "{player} has been punished for {checktype}"
+  TITLE: "Punishment Executed"
+  DESCRIPTION: "{player} has been punished for {checktype}"
 Alert:
-  Webhook: ""
+  WEBHOOK: ""
   # Placeholders
   # {player} = Gets the player name
   # {checktype} = Gets the check type
   # {vl} = Gets the vl
-  Title: "Alert Executed"
-  Description: "{player} has been alerted for {checktype} VL[{vl}]"
+  TITLE: "Alert Executed"
+  DESCRIPTION: "{player} has been alerted for {checktype} VL[{vl}]"
