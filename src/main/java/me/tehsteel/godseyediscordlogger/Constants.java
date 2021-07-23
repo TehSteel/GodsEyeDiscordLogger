@@ -6,15 +6,15 @@ package me.tehsteel.godseyediscordlogger;
  */
 public final class Constants {
 	public static class Alert {
-		public static String Webhook = "";
-		public static String Title = "";
-		public static String Description = "";
+		public static String WEBHOOK = "";
+		public static String TITLE = "";
+		public static String DESCRIPTION = "";
 	}
 
 	public static class Punish {
-		public static String Webhook = "";
-		public static String Title = "";
-		public static String Description = "";
+		public static String WEBHOOK = "";
+		public static String TITLE = "";
+		public static String DESCRIPTION = "";
 
 	}
 
